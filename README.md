@@ -1,58 +1,137 @@
-# Online Local Crop Marketplace and Delivery System
 
-[![-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------](
-https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/BaseMax?tab=repositories)
+# 🌾 Farm2Home
 
-This project is an online platform that serves as a marketplace for local crop producers to connect with consumers and facilitate the delivery of fresh produce. It aims to support local farmers by providing them with a platform to sell their crops directly to consumers while also offering a convenient way for users to purchase fresh, locally sourced produce.
+**Farm2Home** is a full-stack e-commerce platform developed using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). It connects farmers directly with consumers, eliminating intermediaries in the sale of vegetables, fruits, and other farm products.
 
-[![-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------](
-https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/BaseMax?tab=repositories)
-
-## Table of Contents
+## 📋 Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
----
+- [Installation](#installation)
+- [Usage](#usage)
+- [Database Setup](#database-setup)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Features
+## ✨ Features
 
-- **User Registration and Authentication**: Users can create accounts and log in securely.
-- **Marketplace**: Local crop producers can list their crops for sale, including details such as product images, descriptions, and prices.
-- **Shopping Cart**: Users can browse available crops, add them to their cart, and proceed to checkout.
-- **Order Management**: Users can view their order history and track the status of their current orders.
-- **Delivery System**: The platform facilitates the delivery of purchased crops from producers to consumers.
-- **Admin Panel**: - Admin panel for managing farmers, sellers, deliveryman and orders
+### For Customers:
 
+- Browse a wide range of farm products
+- Add items to cart, modify quantities, or remove items
+- Secure checkout process
+- Multiple payment options
+- Provide feedback on purchases
+- View order history and status
 
----
+### For Farmers:
 
-## Technologies Used
+- Secure login system
+- Personalized dashboard to manage products and orders
+- Add, edit, or remove product listings
+- Update delivery status for orders
+- View earnings and sales statistics
+
+## 🛠️ Technologies Used
 
 - **Frontend**:
-  - React.js: JavaScript library for building user interfaces.
-  - Bootstrap: Frontend framework for responsive design.
-  - Axios: Promise-based HTTP client for making requests to the backend API.
-  - React Router DOM: Declarative routing for React applications.
-  - React Bootstrap: Bootstrap components built with React.
-  - React Icons: Icon library for React applications.
-  - React Hook Form: Performant, flexible and extensible forms with easy-to-use validation.
-  - FontAwesome: Icon library for React applications.
-  - Web Vitals: Library for measuring web performance metrics.
+  - React.js
+  - HTML5
+  - CSS3
+  - Bootstrap 4
 
 - **Backend**:
-  - Node.js: JavaScript runtime environment for server-side development
-  - Express.js: Web application framework for building APIs
-  - MongoDB: NoSQL database for storing crop listings, user data, and orders
-  - JWT (JSON Web Tokens): For user authentication and authorization
-  - Bcrypt.js: For hashing user passwords
-  - Multer: Middleware for handling file uploads (e.g., product images)
+  - Node.js
+  - Express.js
 
-- **Deployment**:
-  - Heroku: Cloud platform for deploying and hosting the application
-  - MongoDB Atlas: Cloud-based MongoDB database service
+- **Database**:
+  - MongoDB
+  - Mongoose
 
-[![-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------](
-https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/BaseMax?tab=repositories)
+- **Version Control**:
+  - Git
 
+## 🚀 Installation
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/SasiPrakash23/Farm2Home.git
+   ```
 
+2. **Navigate to the project directory**:
+   ```bash
+   cd Farm2Home
+   ```
+
+3. **Install backend dependencies**:
+   ```bash
+   cd server
+   npm install
+   ```
+
+4. **Install frontend dependencies**:
+   ```bash
+   cd ../client
+   npm install
+   ```
+
+## 📖 Usage
+
+1. **Start the backend server**:
+   ```bash
+   cd server
+   npm start
+   ```
+
+2. **Start the frontend development server**:
+   ```bash
+   cd ../client
+   npm start
+   ```
+
+3. **Access the application**:
+   - Frontend: `http://localhost:3000`
+   - Backend API: `http://localhost:5000/api`
+
+## 🗄️ Database Setup
+
+1. **Ensure MongoDB is installed and running** on your local machine or use a cloud-based MongoDB service.
+
+2. **Configure environment variables**:
+   - Create a `.env` file in the `server` directory with the following content:
+     ```env
+     MONGO_URI=your_mongodb_connection_string
+     PORT=5000
+     ```
+
+3. **Seed the database (optional)**:
+   - If you have seed data, run the seeding script:
+     ```bash
+     cd server
+     npm run seed
+     ```
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Commit your changes**:
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+4. **Push to your forked repository**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Create a Pull Request**.
+
+Please ensure your code adheres to the project's coding standards and includes appropriate documentation.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
